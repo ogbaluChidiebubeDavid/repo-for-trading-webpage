@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+   <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script> 
+        <!-- Smartsupp Live Chat script -->
+        <script type="text/javascript">
+            var _smartsupp = _smartsupp || {};
+            _smartsupp.key = 'b553e18aa3e1238cfdd5c15b23cf5eead3d3455d';
+            window.smartsupp||(function(d) {
+              var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+              s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+              c.type='text/javascript';c.charset='utf-8';c.async=true;
+              c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+            })(document);
+            </script>
+</head>
+<body>
+    <!-- === Main container start === -->
+    <div class="main-container">
+        <!-- ===Aside start === -->
+        <div class="aside">
+            <div class="logo">
+                <a href="#home"><span>K</span>ogrex</a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="#home" class="active"><i class="fa fa-home"></i>Dashboard</a></li>
+                <li><a href="#deposit"><i class="fa-solid fa-dollar-sign"></i>Deposit</a></li>
+                <li><a href="#withdrawal"><i class="fa-solid fa-money-bill-transfer"></i>Withdraw</a></li>
+                <li>
+                    <label class="dropdown-btn"><i class="fa-solid fa-money-bill-trend-up"></i>Trade<i class="fa fa-caret-down"></i></label>
+                    <div class="dropdown-container">
+                        <a href="#forex" class="sub-nav">Forex/Crypto</a>
+                    </div>
+                </li>
+                <li><a href="#transaction" style="white-space: nowrap;"><i class="fa-solid fa-clock-rotate-left"></i>Transaction History</a></li>
+                <li><a href="#loan"><i class="fa-solid fa-money-bill-transfer"></i>Loan</a></li>
+                <li>
+                    <label class="dropdown-btn"><i class="fa fa-cog"></i>settings<i class="fa fa-caret-down"></i></label>
+                    <div class="dropdown-container">
+                        <a href="#settings" class="sub-nav">KYC/Profile</a>
+                    </div>
+                </li>
+                <li><a href="#"><i class="fa fa-sign-out"></i>Logout</a></li>
+            </ul>
+        </div>
+        <!-- === Aside end === -->
+        <!-- ===main content start === -->
+        <div class="main-content">
+            <!-- === Home section start === -->
+            <div class="homebox active section" id="home">
+                <section class="home">
+                    <div class="container" style="padding-top: 50px;">
+                        <div class="row-1">
+                            <div class="home-info padd-15">
+                                <div class="b0x-container">
+                                    <div class="box-container">
+                                        <div class="box">
+                                            <span class="dot"></span>
+                                            <h3 class="top-h3">Welcome</h3>
+                                            <p>John</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="box-container">
+                                        <div class="box">
+                                            <i class="fa-solid fa-dollar-sign"></i>
+                                            <h3 class="top-h3">Account Balance</h3>
+                                            <p class="balance">0</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-img padd-15">
+                                <div class="livecoinwatch-widget-1" lcw-coin="BTC" lcw-base="USD" lcw-secondary="BTC" lcw-period="d" lcw-color-tx="#ffffff" lcw-color-pr="#eb144c" lcw-color-bg="#202334" lcw-border-w="1"></div>
+                                <div class="livecoinwatch-widget-1" lcw-coin="ETH" lcw-base="USD" lcw-secondary="ETH" lcw-period="d" lcw-color-tx="#ffffff" lcw-color-pr="#eb144c" lcw-color-bg="#202334" lcw-border-w="1"></div> 
+                            </div> 
+                        </div>
+                    </div>  
+                </section>
+                <!-- === Home section end === -->
+                <section class="chart">
+                    <div class="container">
+                        <div class="row-2">
+                            <div class="section-content padd-15">
+                                <!-- TradingView Widget BEGIN -->
+                                <div class="tradingview-widget-container">
+                                    <div id="tradingview_854bb"></div>
+                                    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">Kogrex Group Chart</span></a> </div>
+                                    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                                    <script type="text/javascript">
+                                    new TradingView.widget(
+                                    {
+                                    "width": "100%",
+                                    "height": 410,
+                                    "symbol": "NASDAQ:AAPL",
+                                    "interval": "D",
+                                    "timezone": "Etc/UTC",
+                                    "theme": "dark",
+                                    "style": "1",
+                                    "locale": "en",
+                                    "toolbar_bg": "#f1f3f6",
+                                    "enable_publishing": false,
+                                    "hide_side_toolbar": false,
+                                    "allow_symbol_change": true,
+                                    "hotlist": true,
+                                    "calendar": true,
+                                    "container_id": "tradingview_854bb"
+                                    }
+                                    );
+                                    </script>          
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+             
+            <section class="form-popup form section" id="deposit">
+                <form class="form-container">
+                    <div class="mainForm-container">
+                        <h3>Deposit</h3>
+                        <label for="Balance" style="display: block;"><b>Select crypto Type</b></label>
+                        <select name="currencyFrom" id="currencyFrom">
+                            <option value="">-- Select a currency --</option>
+                            <option value="BTC">BTC</option>
+                            <option value="ETH">ETH</option>
+                            <option value="LTC">LTC</option>
+                            <option value="XRP">XRP</option>
+                            <option value="BCH">BCH</option>
+                        </select>
+        
+                        <label for="amnt" style="display: block;"><b>Amount In USD/EUR</b></label>
+                        <input type="number" placeholder="Enter Amount" name="amountFrom" id="amountFrom" required>
+                        <label for="Balance" style="display: block;"><b>Convert to USD/EUR </b></label>
+                        <select name="currencyTo" id="currencyTo">
+                            <option value="">-- Select a currency --</option>
+                            <option value="EUR">EUR</option>
+                            <option value="USD">USD</option>
+                        </select>
+
+                        <p id="result">Select some currencies and an amount to convert</p>
+                    </div>
+                </form>
+                <a href="#invoice" class="investBtn"><input type="button" class="btn btn-deposit" value="Proceed With Deposit" style="
+                    background-color: var(--text-black-700); display: none;"></a>
+            </section>
+
+            <div class="trade-box section" id="forex">    
+                <section class="forex">
+                    <div class="container">
+                        <header class="panel-heading">
+                
+                            <!-- TradingView Widget BEGIN -->
+                            <div class="tradingview-widget-container padd-15" style="width: 100%; height: 600px;">
+                                <iframe scrolling="no" allowtransparency="true" frameborder="0" src="https://s.tradingview.com/embed-widget/forex-cross-rates/?locale=en#%7B%22width%22%3A%22100%25%22%2C%22height%22%3A600%2C%22currencies%22%3A%5B%22EUR%22%2C%22USD%22%2C%22JPY%22%2C%22GBP%22%2C%22CHF%22%2C%22AUD%22%2C%22CAD%22%2C%22NZD%22%2C%22CNY%22%5D%2C%22isTransparent%22%3Afalse%2C%22colorTheme%22%3A%22light%22%2C%22utm_source%22%3A%22ibtradinggroup.com%22%2C%22utm_medium%22%3A%22widget_new%22%2C%22utm_campaign%22%3A%22forex-cross-rates%22%2C%22page-uri%22%3A%22ibtradinggroup.com%2Fdashboard.php%3Fp%3Dforex%22%7D" style="box-sizing: border-box; height: calc(568px); width: 100%;"></iframe>
+                                <div class="tradingview-widget-copyright"><a href="#" rel="noopener" target="_blank"><span class="blue-text">Forex Ticker</span></a> by KOGREX Trading Group</div>
+                            </div>
+                        
+                        </header>
+                        <!-- TradingView Widget END -->
+                        <div class="row-3">
+                        <div class="panel-body padd-15">
+                            <h4 class="padd-15">
+                                Forex Trading
+                            </h4>
+                            <div class="single-blog-content-top padd-15">
+                                <p style="font-weight:bold;"></p>
+                                        <p>Forex trading is the price speculation of one currency against another. Forex markets are always traded as currency pairs where a forex trader will always buy or sell one currency in terms of another. An example of one such trade would be a EUR/USD buy trade, meaning buying EUR and selling USD.</p>
+                                        <p>When you learn and master a consistently profitable forex trading strategy, the potential is limitless. As money management and discipline in executing your trading strategy is key, KOGREX Trading Group has structured our website to contain a plethora of content under both the News and Education menu tabs. Go through them at your own leisure and see what the world of forex trading can offer you.</p>
+                                        
+                                        <p>The forex market is the largest financial market in the world with a turnover of well over $4 trillion a day. Almost every single transaction on all tradable markets, including futures, bonds and stock markets all have a traceable forex trading impact. All banks, governments and companies are participants in this vastly liquid global FX market. Their trading activity creates volatility, which FX traders are able to exploit to their advantage and consistently profit using their edge.</p>
+                                        <p>All KOGREX Trading Group forex traders are able to exploit volatility on global markets, with seamless 24 hour access. KOGREX Trading Group offers this access to global FX Markets via its powerful MetaTrader 4 (MT4) platform.</p>
+                                        <p>KOGREX Trading Group provides Forex traders access to the most liquid global FX markets. Experience a true institutional level of trading through our deep FX liquidity pools and become an active Forex Trader in global markets.</p>
+                                        
+                                        <br>
+                                        <a href="#invst" class="tradeBtn"><input type="button" class="btn" value="Trade Forex"></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="crpto">
+                    <div class="container">
+                        <div class="row-4">
+                            <div class="panel-body padd-15">
+                                <h4 class="padd-15">
+                                    Trade cryptocurrency with leverage
+                                </h4>
+                                <div class="single-blog-content-top padd-15">
+                                    <p style="font-weight:bold;"></p>
+                                    <p>KOGREX Trading Group provides crypto traders access to the most liquid stock exchange from across the globe, including the S&amp;P 500, DAX, FTSE, DJ30 and more.</p>
+                                    <p>You can trade cryptocurrencies with a leverage of up to 1:2, which means that any gains or losses are multiplied. You can start with a minimum of $100 to get the effect of $200 capital!</p>
+                                    <h4>What is a cryptocurrency?</h4>
+                                    <p>Cryptocurrencies (crypto) are virtual currencies that typically use a decentralized network to conduct secure financial transactions. Plus500's trading platform allows you to trade crypto CFDs – such as Bitcoin, Ripple XRP, Ethereum and more – by speculating on their price movements, without actually owning them.</p>
+                                    <h5>What are the advantages of crypto CFDs?</h5>
+                                    <ul style="list-style-type: circle;">
+                                        <li>You don't need an Exchange account or a special wallet!</li>
+                                        <li>Trade in any direction - selling is as easy as buying</li>
+                                        <li>Trade 7 days a week, 24 hours a day!</li>
+                                        </ul>
+                        
+                                    <br>
+                                    <a href="#invst" class="tradeBtn-2"><input type="button" class="btn" value="Trade Cryptocurrency"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <section class="home transaction section" id="transaction">
+                <div class="container" style="padding-top: 50px;">
+                    <div class="row-5">
+                        <div class="transact-info padd-15">
+                            <div class="b0x-container">
+                                <div class="box-container">
+                                    <div class="box">
+                                        <h3>Tranactions</h3>
+                                        <p>Below is a list of all your Tranactions</p>
+                                       <p> Username: johndoe</p>
+                                       <br>
+                                        <div style="overflow-x: auto;">
+                                            <table class="table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="w-20">DEPOSIT</th>
+                                                        <th class="w-20">STATUS</th>
+                                                        <th class="w-20">DATE</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>BTC</td>
+                                                        <td>successful</td>			 
+                                                        <td>2023-01-25 15:26:33</td>
+                                                    </tr>
+                                                </tbody>
+                                                <thead>
+                                                    <tr>
+                                                        <th class="w-20">WITHDRAWAL</th>
+                                                        <th class="w-20">STATUS</th>
+                                                        <th class="w-20">DATE</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>BTC</td>
+                                                        <td>successful</td>			 
+                                                        <td>2023-01-25 15:26:33</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>  
+            </section>
+
+            <section class="form-popup form loan section" id="loan">
+                <form class="form-container">
+                    <div class="mainForm-container">
+                        <h3>Request For Loan</h3>
+        
+                        <label for="amnt" style="display: block;"><b>Amount In USD</b></label>
+                        <input type="number" placeholder="Enter Amount" name="numb" required>
+
+                        
+                        <label for="Balance" style="display: block;"><b>Repayment Pattern</b></label>
+                        <select name="denomination">
+                            <option value="oneMnth">One Month</option>
+                            <option value="threemnth">Three Month</option>
+                            <option value="sixMnth">Six Month</option>
+                            <option value="oneYr">One Year</option>
+                            <option value="fiveYr">Five Years</option>
+                        </select>
+                    
+                        <button type="submit" class="btn">Request</button> 
+                    </div>
+                </form>
+            </section>
+
+            <section class="form-popup form section" id="withdrawal">
+                <form class="form-container">
+                    <div class="mainForm-container">
+                        <h3>Request Withdrawal</h3>
+                        <p>Enter an amount in USD you wish to request for your withdrawal to be processed</p>
+                        <label for="Balance"><b>withdrawable Balance: $0</b></label>
+                        <label for="Balance" style="display: block;"><b>Select crypto Type</b></label>
+                        <select name="denomination">
+                            <option value="BTC">BTC</option>
+                            <option value="ETH">ETH</option>
+                            <option value="DodgeCoin">DodgeCoin</option>
+                            <option value="USDT(TRC20)">USDT(TRC20)</option>
+                            <option value="USDT(ERC20)">USDT(ERC20)</option>
+                        </select>
+                    
+                        <label for="psw" style="display: block;"><b>Wallet Address</b></label>
+                        <input type="text" placeholder="Enter Wallet Address" name="address" required>
+
+                        <label for="amnt" style="display: block;"><b>Amount In USD</b></label>
+                        <input type="number" placeholder="Enter Amount" name="numb" required>
+                    
+                        <button type="submit" class="btn">Withdraw</button>
+                    </div>
+                </form>
+            </section>
+
+            <div class="settings section form" id="settings">
+                <div class="form-popup">
+                    <form class="form-container">
+                        <div class="mainForm-container">
+                            <h3>KYC</h3>
+                            <label for="Balance" style="display: block;"><b>Upload your Driving License</b></label>
+                            <input type="file" name="drivingLicense" id="license" required>
+                        
+                            <button type="submit" class="btn">Send</button>
+                        </div>
+                    </form>
+                </div>  
+                <div class="form-popup">
+                    <form class="form-container">
+                        <div class="mainForm-container">
+                            <h3>Set Your Account/Profile</h3>
+                            <label for="Balance" style="display: block;"><b>Upload your Image</b></label>
+                            <input type="file" name="Dp" id="Dp" required>
+            
+                            <label for="Balance" style="display: block;"><b>Change Password</b></label>
+                            <input type="password" name="newPswd" required>
+            
+                            <label for="Balance" style="display: block;"><b>Confirm Password</b></label>
+                            <input type="password" name="newPswd" required>
+                        
+                            <button type="submit" class="btn">Send</button>
+                        </div>
+                    </form>
+                </div>  
+            
+            </div>
+
+            <section class="card-sect section" id="invst">
+                <div class="container">
+                    <div class="row">
+                        <div class="panel-body padd-15">
+                            <h2>Investment plans</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="card padd-15">
+                            <div class="card-inner">
+                                <div class="icon">
+                                <h4>Brown Plan Package</h4>
+                                </div>
+                                <div class="circle-container">
+                                    <p class="circle">$35</p>
+                                </div>
+                                <p>$35 - $150</p>
+                                <p>ROI: 3%</p>
+                                <p>Duration: 22 hours</p>
+                                <form>
+                                    <input type="number" name="invst-value" placeholder="Enter your capital" required>
+                                    <a href="#invoice" class="investBtn"><input type="button" class="btn" value="Trade"></a>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="card padd-15">
+                            <div class="card-inner">
+                                <div class="icon">
+                                <h4>Prime Plan Package</h4>
+                                </div>
+                                <div class="circle-container">
+                                    <p class="circle">$151</p>
+                                </div>
+                                <p>$151 - $999</p>
+                                <p>ROI: 16.5%</p>
+                                <p>Duration: 52 hours</p>
+                                <form>
+                                    <input type="number" name="invst-value" placeholder="Enter your capital" required>
+                                    <a href="#invoice" class="investBtn"><input type="button" class="btn" value="Trade"></a>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="card padd-15">
+                            <div class="card-inner">
+                                <div class="icon">
+                                <h4>Kogrex Plan Package</h4>
+                                </div>
+                                <div class="circle-container">
+                                    <p class="circle">$1000</p>
+                                </div>
+                                <p>$1000 - $5000</p>
+                                <p>ROI: 45%</p>
+                                <p>Duration: 91 hours</p>
+                                <form>
+                                    <input type="number" name="invst-value" placeholder="Enter your capital" required>
+                                    <a href="#invoice" class="investBtn"><input type="button" class="btn" value="Trade"></a>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="card padd-15">
+                            <div class="card-inner">
+                                <div class="icon">
+                                <h4 class="long-h4">Standard Plan Package</h4>
+                                </div>
+                                <div class="circle-container">
+                                    <p class="circle">$10,000</p>
+                                </div>
+                                <p>$10,000 - $50,000</p>
+                                <p>ROI: 90%</p>
+                                <p>Duration: 91 hours</p>
+                                <form>
+                                    <input type="number" name="invst-value" placeholder="Enter your capital" required>
+                                    <a href="#invoice" class="investBtn"><input type="button" class="btn" value="Trade"></a>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="card padd-15">
+                            <div class="card-inner">
+                                <div class="icon">
+                                <h4>Sphere Plan Package</h4>
+                                </div>
+                                <div class="circle-container">
+                                    <p class="circle">$51,000</p>
+                                </div>
+                                <p>$51,000 - $10,000,000</p>
+                                <p>ROI: 3%</p>
+                                <p>Duration: 91 hours</p>
+                                <form>
+                                    <input type="number" name="invst-value" placeholder="Enter your capital" required>
+                                    <a href="#invoice" class="investBtn"><input type="button" class="btn" value="Trade"></a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="invoice-container section" id="invoice">
+                <div class="brand-section">
+                    <div class="invoice-row">
+                        <div class="col-6">
+                            <h1 class="text-white">INVOICE</h1>
+                            <h4 class="text-signify">UNPAID</h4>
+                        </div>
+                        <div class="col-6">
+                            <div class="company-details">
+                            <p class="text-white">John Doe</p>
+                            <p class="text-white">email: davechuks65@gmail.com</p>
+                            <p class="text-white">Issued: 2023-01-25 15:26:33</p>
+                            <h4 class="text-signify" style="font-size: 12px;">UNPAID</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>	
+        
+                <div class="body-section">
+                    <div class="invoice-row">
+                        <div class="col-6">
+                            <h5 class="sub-heading">TO</h5>
+                            <h4 class="sub-heading">KOGREX</h4>
+                            <p class="sub-heading">4-8 Russell Gardens, Wickford, United Kingdom, SS11 8QU</p>
+                            <p class="sub-heading">support@ibtradinggroup.com</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="sub-heading">Invoice Date: 2023-01-25 15:26:33</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="body-section">
+                    <br>
+                    <div class="hidder" style="overflow-x: auto;">
+                        <table class="table-bordered">
+                            <thead>
+                                <tr>
+                                    <th class="w-20">PAYMENT METHOD</th>
+                                    <th class="w-20">DATE</th>
+                                    <th class="w-20">AMOUNT IN USD/EUR</th>
+                                    <th class="w-20">BTC AMOUNT</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="coinName">BTC</td>			 
+                                    <td>2023-01-25 15:26:33</td>
+                                    <td class="usdAmnt">$50</td>
+                                    <td class="cryptoAmnt">0.00221</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br>
+                    <p class="sub-heading">Wallet Payment Details </p>
+                    <p class="sub-heading">To complete deposit, please send exactly: 0.00221 BTC to the address:</p>
+                    <input type="text" value=" " id="walletAddress" class="sub-heading" style="border: 1px solid #ddd; text-align: center; margin: 10px 0; padding: 10px 0; word-wrap: break-word;" disabled>
+                        <button onclick="copier()">Copy text</button>
+                    <h3 class="heading">Your account will be credited once your payment is confirmed by our billing department.</h3>
+                </div>
+        
+                <div class="body-section">
+                    <p>&copy; Copyright 2021 - Kogrex. All rights reserved. 
+                        <a href="https://www.kogrex.com/" class="float-right">www.kogrex.com</a>
+                    </p>
+                </div>      
+            </section>
+
+        </div>
+        <!-- === main contengt end=== -->
+    </div>
+    <!-- === Main container end === -->
+
+    <!--Js file-->
+    <script src="script.js"></script>
+    <script>
+        const bodyEl = document.querySelector('body');
+        const resultEl = document.querySelector('#result');
+        const currencyFromSelect = document.querySelector('#currencyFrom');
+        const amountFromInput = document.querySelector('#amountFrom');
+        const currencyToSelect = document.querySelector('#currencyTo');
+        const depositMoney = document.querySelector('.btn-deposit');
+        const usdAmnt = document.querySelector('.usdAmnt');
+        const crptoAmnt = document.querySelector('.cryptoAmnt');
+        const coinName = document.querySelector('.coinName');
+        let walletAddress = document.querySelector('#walletAddress')
+
+        let currencyFromValue = currencyFromSelect.value;
+        let amountFromValue = amountFrom.value;
+        let currencyToValue = currencyToSelect.value;
+        
+        currencyFromSelect.addEventListener('change', () => {
+            currencyFromValue = currencyFromSelect.value;
+            bodyEl.className = '';
+            bodyEl.classList.add(currencyFromSelect.value);
+            if (currencyFromValue === 'BTC'){
+                walletAddress.value = 'bc1q9kzseprctykheclf7gx888dxuyyzma65lxyfa2'
+            }else if (currencyFromValue === 'ETH'){
+                walletAddress.value = '0xD5b46B915445A2574AF922860a743C351822B96F'
+            }else if (currencyFromValue === 'XRP'){
+                walletAddress.value = 'rwxgvx3uAysryZFkEBwNNwbPgrmTvERPGh'
+            }
+            validate();
+        });
+        
+        amountFromInput.addEventListener('change', () => {
+            amountFromValue = amountFromInput.value;
+            validate();
+        });
+        
+        currencyToSelect.addEventListener('change', () => {
+            currencyToValue = currencyToSelect.value;
+            depositMoney.style.display = 'block';
+            validate();
+        });
+        
+        
+        /**
+         * Check input values and submit or show message.
+         */
+        function validate() {
+            if (
+                currencyFromValue !== '' &&
+                amountFromValue !== '' &&
+                currencyToValue !== ''
+            ) {
+                submit();
+            } else {
+                resultEl.innerText = 'Select some currencies and an amount to convert';
+            }
+        }
+        
+        
+        
+        /**
+         * Multiplies two floats without losing precision.
+         */
+        function multFloats(x, y) {
+            debugger;
+            if (String(x).length > 1 && String(y).length > 1) {
+                const xP = String(x).split('.').length;
+                const yP = String(y).split('.').length;
+                const _x = x * (Math.pow(10, xP));
+                const _y = y * (Math.pow(10, yP));  
+                return (_x * _y) / Math.pow(10, xP + yP);
+            } else {
+                return x * y;
+            }  
+        }
+        
+        /**
+         * Setup variables with result info and do request.
+         */
+        function submit() {
+            const url = 
+                  `https://min-api.cryptocompare.com/data/price?fsym=${currencyFromValue}&tsyms=${currencyToValue}`;
+        
+            fetch(url)
+                .then(res => res.json())
+                .then(data => {
+                    const fromText = `${amountFromValue} ${currencyFromValue}`;
+                    const inputAmount = parseFloat(amountFromValue);
+                    const dataAmount = parseFloat(data[currencyToValue]);
+                    const resultAmount = multFloats(inputAmount, dataAmount);
+                    const toText = `${resultAmount} ${currencyToValue}`;
+                    result.innerText = `${fromText} = ${toText}`;
+                })
+                .catch(err => {
+                    console.error(err);
+                });
+        }
+
+        depositMoney.addEventListener('click', function(){
+            coinName.innerText =  currencyFromValue;
+            crptoAmnt.innerText = amountFromInput.value;
+           usdAmnt.innerText  = result.innerText.split('=').pop()
+        })
+        
+    </script>
+</body>
+</html>
